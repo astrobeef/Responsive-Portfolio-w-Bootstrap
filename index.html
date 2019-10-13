@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
 
-    <link rel="stylesheet" href = "style.css">
 
     <div id="head-bootstrap">
 
@@ -16,48 +15,113 @@
 
     </div>
 
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 
 <body>
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-
-<div class="container">
-
-    <p class="navbar-brand my-0 h1 ml-15 bg-teal text-white px-4 py-2"> Brian Graf</p>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
-        <ul class="navbar-nav ml-auto mr-15">
-            
-            <li class="nav-item active">
-                
-                <a href="index.html" class="nav-link">About <span class="sr-only">(current)</span></a>
-                
-            </li>
-            
-            <li class="nav-item">
-                
-                <a href="portfolio.html" class="nav-link">Portfolio <span class="sr-only">(current)</span></a>
-                
-            </li>
-            
-            <li class="nav-item">
-                
-                <a href="contact.html" class="nav-link">Contact <span class="sr-only">(current)</span></a>
-                
-            </li>
-            
-        </ul>
+
+    <!-- Below, navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 border-bottom border-secondary">
         
+        <div class="container px-5">
+
+
+                <button class="navbar-toggler mr-auto mt-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+            <p class="navbar-brand my-0 h1 ml-md-5 bg-teal text-white px-4 py-2"> Brian Graf</p>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav ml-auto mr-5">
+
+                    <li class="nav-item active">
+
+                        <a href="index.html" class="nav-link">About <span class="sr-only">(current)</span></a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="portfolio.html" class="nav-link">Portfolio <span class="sr-only">(current)</span></a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="contact.html" class="nav-link">Contact <span class="sr-only">(current)</span></a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container col-lg-8 col-xs-11 mt-5 border border-secondary bg-white">
+
+        <!-- AM - Row 1 -->
+        <div class="row mt-3 mx-5">
+
+            <!-- Row 1 : Col 1/1 -->
+            <h2 class="col-m">
+
+                About Me
+
+            </h2>
+
+        </div>
+
+        <div class="dropdown-divider border col-11 m-auto"></div>
+
+        <!-- AM - Row 2 -->
+        <div class="row mt-3 mx-5">
+
+            <picture class="col-xs-12 col-lg-3 p-0 pb-4 ">
+
+                <source srcset="assets/images/Desert Lowpoly Art.jpg" type="image/svg+xml">
+                <img src="assets/images/Desert Lowpoly Art.jpg" class="img-thumbnail img-fluid">
+                <!-- I have chosen to apply an ID here since the modifications I will be making are quite particular to this image.  In an attempt to avoid complications further on, I have chosen a specific name instead of something generic-->
+
+            </picture>
+
+            <p class="col-md about-p px-3">
+                <!-- I have created the class for all paragraphs within the about page.  This will allow me to modify body text within the about section, without distrupting paragraph text outside of the about section. -->
+                I have been programming in C# for video game development over the past four years. I learned all of my
+                code from online tutorials: Unity and Youtube. Starting this year, I began practicing 3D, lowpoly art to
+                round myself out as a game developer. Now I want to expand my knowledge as a programmer past front end
+                game development. In my free time, I play video games and Dungeons & Dragons with my friends.
+            </p>
+
+        </div>
+
+        <!-- AM - Row 3 -->
+        <div class="row mt-3 mx-5">
+
+            
+                <p class = "about-p">
+                        <!-- PROBLEM : I wanted to code this paragraph such that it would always begin after the about-desert_img.  However, I could not find a way to do this.  My 'solution' was to modify the image and font-size so that this paragraph begins after the image. -->
+        
+                        As for work, I started cooking in my junior year of high school. I had never cooked at home, so I had
+                        nearly zero experience cooking. I applied to a gourmet resturant, and the only question they asked me in
+                        my interview was : "When can you start?" Turns out they were just desperate for a cook. Now I have been
+                        cooking for three years, and I currently work at Snooze: a tasteful, fun, and fast paced restaurant.
+        
+                    </p>
+        
+
+        </div>
+
     </div>
-    
-</div>
-</nav>
-
-
 
 </body>
 

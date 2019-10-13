@@ -1,6 +1,6 @@
 body
 {
-    background-color: #333333;
+    background-color: #F0F0F0;
 }
 
 .ml-15
@@ -20,6 +20,11 @@ body
 
 #about-desert_img
 {
-    height : 200px;
-    width : 200px;
+    height : 250px;
+    width : 250px;
+}
+
+.gallery-name
+{
+    opacity: 0.7;
 }
