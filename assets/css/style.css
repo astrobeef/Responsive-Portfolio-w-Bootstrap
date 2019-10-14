@@ -1,6 +1,34 @@
+
+
 body
 {
     background-color: #F0F0F0;
+    /* Above we set the background color of the body to #F0F0F0. This does NOT carry over to children of body*/
+    color : #777;
+    /* Above we set the color of the text in the body to #777777.  This DOES carry over to the children of body */
+    font-family: 'Hepta Slab', sans-serif;
+    /* Above we set the font-family of the body.  This DOES carry over to the children of body */
+}
+
+p
+{
+    color : #777;
+    /* Above we set the color of the text in the body to #777777.  This DOES carry over to the children of body */
+    font-family: 'Hepta Slab', sans-serif;
+    /* Above we set the font-family of the body.  This DOES carry over to the children of body */
+}
+
+
+h1, h2, h3, h4, h5, h6
+{
+ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Above we set the font-family of all headers. */   
+}
+
+.body-header-color
+{
+    color : #4aaaa5;
 }
 
 .ml-15
@@ -18,6 +46,16 @@ body
     background-color: #4aaaa5;
 }
 
+.bg-grey
+{
+    background-color: #666666;
+}
+
+.text-CCC
+{
+    color: #cccccc;    
+}
+
 #about-desert_img
 {
     height : 250px;
@@ -27,4 +65,11 @@ body
 .gallery-name
 {
     opacity: 0.7;
+}
+
+a:hover
+{
+    transition: ease-in 0.15s;
+
+    background-color: #4aaaa5;
 }

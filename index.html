@@ -21,10 +21,13 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Roboto&display=swap" rel="stylesheet">
+    <!-- This will temporarily download specific fonts from Google Fonts to be used on this webpage.  This does NOT carry over to other pages on our site -->
 </head>
 
 
-<body>
+<body class = "d-flex flex-column h-100">
 
         
 
@@ -77,7 +80,7 @@
         <div class="row mt-3 mx-5">
 
             <!-- Row 1 : Col 1/1 -->
-            <h2 class="col-m">
+            <h2 class="col-m body-header-color">
 
                 About Me
 
@@ -97,7 +100,7 @@
 
             </picture>
 
-            <p class="col-md about-p px-3">
+            <p class="col-md about-p pl-4">
                 <!-- I have created the class for all paragraphs within the about page.  This will allow me to modify body text within the about section, without distrupting paragraph text outside of the about section. -->
                 I have been programming in C# for video game development over the past four years. I learned all of my
                 code from online tutorials: Unity and Youtube. Starting this year, I began practicing 3D, lowpoly art to
@@ -108,7 +111,7 @@
         </div>
 
         <!-- AM - Row 3 -->
-        <div class="row mt-3 mx-5">
+        <div class="row mt-0 mb-4 mx-5">
 
             
                 <p class = "about-p">
@@ -125,7 +128,18 @@
         </div>
 
     </div>
+    
+    <footer class="position-fixed fixed-bottom bg-grey p-0">
 
+            <div class="row mx-auto p-0 bg-teal mb-auto py-1">
+
+            </div>
+
+            <div class="container text-CCC row py-3 m-0 col-12">
+                <span class="m-auto">Copyright&copy;</span>
+            </div>
+        </footer>
+    
 </body>
 
 </html>
