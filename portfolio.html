@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Below; allows screens to scale based on device size -->
+    <meta nAboutMee="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Portfolio</title>
 
-
+    <!-- Below, link to Twitter Bootstrap: allows me to use their CSS library -->
     <div id="head-bootstrap">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,36 +26,39 @@
 
     </div>
 
+    <!-- Below; link to my personal CSS file. This is placed after Bootstrap to allow me to overwrite Bootstrap--->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    
-    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Roboto&display=swap" rel="stylesheet">
-    <!-- This will temporarily download specific fonts from Google Fonts to be used on this webpage.  This does NOT carry over to other pages on our site -->
 
+    <!-- Below; this will temporarily download specific fonts from Google Fonts to be used on this webpage.  This does NOT carry over to other pages on our site -->
+    <link href="https://fonts.googleapis.com/css?fAboutMeily=Hepta+Slab|Roboto&display=swap" rel="stylesheet">
 </head>
 
 
-<body class = "d-flex flex-column h-100">
+<body class="d-flex flex-column h-100">
 
 
-
-    <!-- Below, navbar -->
+    <!-- Navbar Section -->
+    <!-- Below, navbar decleration.  Several classes used for customization: text color, bg color, padding-Y size, bottom border, bottom border color-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 border-bottom border-secondary">
 
+        <!-- Below; container decleration: holds navbar contents.  I do this to prevent the contents of the navbar from stretching across the entire width of the screen.  With 'px-5' I AboutMe padding the X-axis for 3 times the '$spacing' value defined by Bootstrap -->
         <div class="container px-5">
 
-
+            <!-- Below; define a button for the navbar, with 'mr-auto' and 'mt-auto' to justify the button to the left and bottom, respectively.  The span creates the icon for the toggler. -->
             <button class="navbar-toggler mr-auto mt-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Below; created a 'brand' which is a sort of header (h1).  Added classes to change margin, color, bg, padding -->
             <p class="navbar-brand my-0 h1 ml-md-5 bg-teal text-white px-4 py-2"> Brian Graf</p>
 
+            <!-- Below; create a Div which can Collapse.  Everything within this Div will collapse into the button defined above.  This is done through 'data-target', defined in the button.  The 'data-target' is set to the 'id' of the below Div. -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-
+                <!-- Below; creates a list.  Classes: defines it as a navbar element; changes the margins -->
                 <ul class="navbar-nav ml-auto mr-5">
 
                     <li class="nav-item">
@@ -63,8 +67,10 @@
 
                     </li>
 
+                    <!-- Below; defines a list element within the nav-bar.  Set active, since this is the page we are on -->
                     <li class="nav-item active">
 
+                        <!-- Below; defines a link to the index.html page (the page we are on now) -->
                         <a href="portfolio.html" class="nav-link">Portfolio <span class="sr-only">(current)</span></a>
 
                     </li>
@@ -81,30 +87,41 @@
 
         </div>
     </nav>
+    <!-- End of Navbar -->
+
+    <!-- ~~ -->
 
     <!-- Portfolio Section -->
+    <!-- Below; defines a container with a column length of 8 on large devices, and 11 on XS devices or larger.  We do this so there is more horizontal space on smaller devices.  We use a container so that the elements within the container do not take up the entire width of our page.  We can also customize the BG of this section: other classes used to change border color and bg color -->
     <div class="container col-lg-8 col-xs-11 mt-5 border border-secondary bg-white">
 
-        <!-- AM - Row 1 -->
+        <!-- Portfolio - Row 1 -->
+        <!-- Below; define a row with margin adjustments -->
         <div class="row mt-3 mx-5">
 
             <!-- Row 1 : Col 1/1 -->
-            <h2 class="col-m body-header-color">
+            <!-- Below; define a header column within the row which will automatically span all the width it is given.  Use custom class to adjust color. -->
+            <h2 class="col body-header-color">
 
                 Portfolio
 
             </h2>
 
+            <!-- Below; Create a divider after Row 1 and before Row 2 -->
             <div class="dropdown-divider border col-11 m-auto"></div>
 
+            <!-- Portfolio - Row 2 -->
+            <!-- Below; define 2nd row with no margin adjustments, since there will be images displayed -->
             <div class="row">
 
-
+                <!-- Below; define a picture with different column size on different devices, to allow smaller screens to clearly see images.  Adjust margins and padding for clarity.  Position set to relative so the banner can have an absolute target.-->
                 <picture class="col-xs-12 col-md p-0 mx-1 py-4 position-relative">
 
+                    <!-- Link the image with classes to scale the image on all devices -->
                     <img src="assets/images/desert-lowpoly-art.jpg" type="image/svg+xml"
                         class="img-thumbnail img-fluid">
 
+                    <!-- Create an alert which expands over the image.  This is done using absolute positioning, margin adjustment, and custom CSS -->
                     <div class="alert alert-primary position-absolute fixed-bottom mb-5 gallery-name" role="alert">
                         <h6 class="text-center text-nowrap m-0">Coming Soon</h6>
                     </div>
@@ -134,20 +151,33 @@
                 </picture>
 
             </div>
+
+            <!-- Below; this is where I would add a new row of thumbnails -->
+            <div class="row"></div>
+
+        </div>
+    </div>
+    <!-- End of Portfolio Section -->
+
+    <!-- ~~ -->
+
+    <!-- Start of Footer Section -->
+    <!-- Below; Define a footer with a fixed position at the bottom of the screen.  This allows the footer to be a sticky footer, by fixing the section to the bottom of the user's viewport.  Also change bg color and padding.  Padding changed to stretch footer across entire width -->
+    <footer class="position-fixed fixed-bottom bg-grey p-0">
+
+        <!-- Below; define a row which will be used as a thick border (Bootstrap does not allow Border width change).  Use margin-bottom-auto to adjust this element to the top of our footer-container.  Change bg-color, and adjust padding for thickness. -->
+        <div class="row mx-auto p-0 bg-teal mb-auto py-1">
+
+            <!-- Empty; this only provides color -->
 
         </div>
 
-
-        <footer class="position-fixed fixed-bottom bg-grey p-0">
-
-            <div class="row mx-auto p-0 bg-teal mb-auto py-1">
-
-            </div>
-
-            <div class="container text-CCC row py-3 m-0 col-12">
-                <span class="m-auto">Copyright&copy;</span>
-            </div>
-        </footer>
+        <!-- Below, define a row which will hold our placeholder copyright.  Given text-color, padding for thickness, col-12 for centering, and margin for spacing -->
+        <div class="row text-CCC row py-3 m-0 col-12">
+            <span class="m-auto">Copyright&copy;</span>
+        </div>
+    </footer>
+    <!-- End of footer -->
 
 </body>
 
