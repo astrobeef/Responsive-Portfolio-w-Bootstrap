@@ -137,7 +137,7 @@
                     <span class="input-group-text" id="basic-addon1">Name</span>
                     
                     <!-- Allows for user input -->
-                    <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                    <input type="text" class="form-control" placeholder="Brian Graf" readonly = "readonly" aria-label="Brian Graf"
                     aria-describedby="basic-addon1">
                     
                 </div>
@@ -174,7 +174,7 @@
                     <span class="input-group-text" id="basic-addon2">Email</span>
                     
                     <!-- Defines the text box for user input -->
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                    <input type="text" class="form-control" readonly = "readonly" placeholder="brian.g.graf@gmail.com" aria-label="brian.g.graf@gmail.com"
                     aria-describedby="basic-addon2">
                     
                 </div>
@@ -189,37 +189,35 @@
             <h3 class="contact-subhead">
                 <!-- This is the heading for the following message box -->
                 
-                Message
+                Resume
+
+                <a href="assets/images/Resume for Wise Agent.pdf" download>
+                    <img src="assets/images/Resume for Wise Agent.pdf" alt="Resume">
+                  </a>
                 
             </h3>
             
         </div>
         
         <!-- AM - Row 7 -->
-        <!-- This row will contain the text area for the user's message -->
+        <!-- This row will contain the input box for the user's email -->
         <div class="row mt-3 mx-5">
             
+            
             <!-- Define a input group which will hold the entire input prompt and box -->
-            <div class="input-group">
+            <div class="input-group mb-3">
+                
                 <!-- Define input prepend, which holds the entire input-->
                 <div class="input-group-prepend">
-                    <!-- Specifies the prompt -->
-                    <span class="input-group-text">Message</span>
+                    
+                    <!-- Defines the text box for user input -->
+                    <a type="text" class="form-control" readonly = "readonly" target = "_blank" href = "https://github.com/astrobeef/">GitHub</a>
+                    <a type="text" class="form-control" readonly = "readonly" target = "_blank" href = "https://www.linkedin.com/in/brian-graf-a99a50171/">LinkedIn</a>
+                    
                 </div>
-                <!-- Defines the textarea for user input -->
-                <textarea class="form-control col-6" aria-label="Message"></textarea>
+                
             </div>
             
-            
-        </div>
-        
-        <!-- Below; a 'Send' button which does not actually work -->
-        <div class="row mb-3 mt-3 mx-5">
-            <div class="input-group mb-3 mt-5">
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Send</button>
-                </div>
-            </div>
         </div>
 
     </div>
